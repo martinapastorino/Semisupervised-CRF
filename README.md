@@ -1,8 +1,8 @@
 
 # CFC-CRF: Cluster level Fully Connected CRF
 
-A Matlab-based implementation of the remote sensing image classification method proposed in "A Semisupervised CRF Model for CNN-Based Semantic Segmentation With Sparse Ground Truth", written by L. Maggiolo, D. Marcos, G. Moser, and S.B. Serpico, IEEE Trans. on Geoscience and Remote Sensing, 2021.
-Please refer to this paper for a more detailed description of the algorithm.
+A Matlab-based implementation of the remote sensing image classification method proposed in "A Semisupervised CRF Model for CNN-Based Semantic Segmentation With Sparse Ground Truth", written by L. Maggiolo, D. Marcos, G. Moser, and S.B. Serpico, IEEE Trans. on Geoscience and Remote Sensing, 2022.
+Please refer to this paper for a more detailed description of the algorithm and for parameters tuning.
 
 A preliminary presentation of this work was published by the authors in a conference paper: L. Maggiolo, D. Marcos, G. Moser, and D. Tuia, “Improving maps from
 cnns trained with sparse, scribbled ground truths using fully connected crfs,” in Proc. IEEE Int. Geosci. Remote Sens. Symp. (IGARSS), Valencia, Spain, Jul 2018, pp. 2099–2102.
@@ -52,7 +52,19 @@ CFC-CRF involves several hyperparameters, to be defined at diferent stages.
 - `lambda.cc`: weight regulating the intensity of the graph connections from cluster centroids to other cluster centroids (which are fully connected);
 - `lambda.pc`: weight regulating the intensity of the graph connections from pixels to nearest cluster centroid (h-nn).
 
-For guidelines about parameters setting, please refer to "A Semisupervised CRF Model for CNN-Based Semantic Segmentation With Sparse Ground Truth", written by L. Maggiolo, D. Marcos, G. Moser, and S.B. Serpico, IEEE Trans. on Geoscience and Remote Sensing, 2021.
+When using this work, please this paper:
+
+```
+@ARTICLE{9497318,
+  author={Maggiolo, Luca and Marcos, Diego and Moser, Gabriele and Serpico, Sebastiano B. and Tuia, Devis},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={A Semisupervised CRF Model for CNN-Based Semantic Segmentation With Sparse Ground Truth}, 
+  year={2022},
+  volume={60},
+  number={},
+  pages={1-15},
+  doi={10.1109/TGRS.2021.3095832}}
+```
 
 ####disclaimer
 The present code was intended for laboratory experiments only.
